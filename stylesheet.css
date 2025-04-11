@@ -1,0 +1,64 @@
+﻿/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #34495e;
+    text-align: center;
+    background: linear-gradient(45deg, #f0eaec, #99c3e7);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.login-box {
+    background-color: white;
+    color: #34495e;
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+select, input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f4f6f8;
+    font-size: 16px;
+}
+
+button {
+    width: 95%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #1682ee;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+    button:hover {
+        background-color: #34495e;
+    }
