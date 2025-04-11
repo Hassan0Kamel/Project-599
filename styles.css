@@ -137,3 +137,9 @@ button {
     margin-top: 20px;
     font-size: 14px;
 }
+.site-footer {
+    direction: rtl;
+}
+.footer-section {
+    text-align: right;
+}
