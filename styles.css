@@ -3,16 +3,25 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #34495e;
-    text-align: center;
     background: linear-gradient(45deg, #f0eaec, #99c3e7);
     min-height: 100vh;
+    text-align: center;
 }
+
+.logo {
+    margin: 20px 0;
+    text-align: center;
+}
+
+    .logo img {
+        max-width: 200px;
+        height: auto;
+    }
 
 /* Navigation Bar */
 .button-nav {
     background: linear-gradient(45deg, #1a6fc9, #2a4b6d);
     padding: 15px 0;
-    margin: 0;
     width: 100%;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
@@ -23,7 +32,7 @@ body {
         margin: 0 auto;
         display: flex;
         justify-content: center;
-        gap: 5px;
+        gap: 10px;
         max-width: 800px;
     }
 
@@ -34,17 +43,15 @@ body {
     background: transparent;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
     transition: all 0.3s;
     font-weight: 500;
     border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 6px;
     margin: 0 2px;
 }
 
     .nav-button:hover {
         background: rgba(255,255,255,0.1);
-        transform: none;
-        box-shadow: none;
     }
 
     .nav-button.active {
@@ -57,94 +64,270 @@ body {
         font-size: 16px;
     }
 
+/* Login Form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: white;
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+    .login-box h2 {
+        margin-bottom: 20px;
+        color: #34495e;
+    }
+
+    .login-box select,
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f4f6f8;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    .login-box button {
+        width: 100%;
+        padding: 12px;
+        margin: 15px 0 5px;
+        background-color: #1682ee;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+        .login-box button:hover {
+            background-color: #34495e;
+        }
+
 /* About Page */
+.hero-section {
+    padding: 40px 0;
+    background: linear-gradient(45deg, #1682ee, #2c3e50);
+    color: white;
+    margin-bottom: 30px;
+}
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+        margin: 0 0 10px 0;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
 .content-box {
     background: white;
     border-radius: 12px;
-    padding: 20px;
-    margin: 20px auto;
+    padding: 25px;
+    margin: 0 auto 25px;
     width: 90%;
     max-width: 800px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.hero-section {
-    padding: 30px 0;
-    margin: 0 0 20px 0;
-    background: linear-gradient(45deg, #1682ee, #2c3e50);
-    color: white;
-    width: 100%;
-}
-
-    .hero-section h1 {
-        font-size: 2rem;
-        margin: 10px 0;
-    }
-
 .values-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
+    gap: 20px;
+    margin: 25px 0;
 }
 
 .value-item {
     flex: 1;
-    min-width: 150px;
-    padding: 15px;
+    min-width: 200px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.3s;
 }
+
+    .value-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .value-item i {
+        font-size: 2rem;
+        color: #1682ee;
+        margin-bottom: 15px;
+    }
 
 .team-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
+    gap: 30px;
+    margin: 30px 0;
 }
 
 .team-member {
-    width: 140px;
+    width: 160px;
+    text-align: center;
 }
 
     .team-member img {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #1682ee;
     }
 
 .achievements {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
+    gap: 40px;
+    margin: 40px 0;
 }
 
-
-.logo {
-    margin: 15px 0;
+.achievement-item {
+    text-align: center;
 }
 
+    .achievement-item i {
+        font-size: 2.5rem;
+        color: #1682ee;
+    }
+
+.cta-section {
+    margin: 50px 0;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background: #1682ee;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+    .cta-button:hover {
+        background: #34495e;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+/* Footer */
 .site-footer {
-    margin-top: 30px;
+    background-color: #34495e;
+    color: white;
+    padding: 40px 0 20px;
+    width: 100%;
+    margin-top: 50px;
 }
 
-/* Responsive Adjustments */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    text-align: right;
+}
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #1682ee;
+        padding-bottom: 5px;
+        display: inline-block;
+    }
+
+    .footer-section p,
+    .footer-section a {
+        color: #ddd;
+        line-height: 1.6;
+        text-decoration: none;
+    }
+
+        .footer-section a:hover {
+            color: #1682ee;
+        }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #4a6278;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .button-nav ul {
         flex-wrap: wrap;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .nav-button {
+        flex: 1 0 40%;
+        margin: 5px 0;
         padding: 10px 15px;
         font-size: 14px;
     }
 
-    .content-box {
-        padding: 15px;
+    .values-list {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .value-item, .team-member {
-        min-width: 120px;
+    .value-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievements {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-section {
+        text-align: center;
     }
 }
