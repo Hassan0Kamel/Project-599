@@ -418,7 +418,7 @@ body {
     margin-top: 10px;
     font-size: 14px;
 }
-/* Certificate Page Specific Styles */
+/* Certificate Page */
 .certificate-container {
     max-width: 1000px;
     margin: 30px auto;
@@ -462,6 +462,12 @@ body {
         background: #f8f9fa;
         font-size: 16px;
     }
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
 
 .generate-btn {
     background: #1682ee;
