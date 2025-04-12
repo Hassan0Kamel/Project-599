@@ -137,53 +137,54 @@ button {
     margin-top: 20px;
     font-size: 14px;
 }
-.forum-nav {
-    width: 250px;
-    background: #2c3e50;
-    color: white;
-    border-radius: 10px;
-    padding: 20px 0;
-    margin: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.button-nav {
+    background: #f8f9fa;
+    padding: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
 }
 
-    .forum-nav ul {
+    .button-nav ul {
         list-style: none;
         padding: 0;
         margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
 
-    .forum-nav li {
-        margin: 5px 0;
-        position: relative;
+    .button-nav li {
+        margin: 0;
     }
 
-        .forum-nav li a {
-            display: flex;
-            align-items: center;
-            padding: 12px 20px;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s;
-            border-right: 4px solid transparent;
-        }
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s;
+    font-weight: 500;
+    border: 2px solid transparent;
+}
 
-            .forum-nav li a:hover {
-                background: #34495e;
-                border-right: 4px solid #3498db;
-            }
+    .nav-button:hover {
+        background: #34495e;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-        .forum-nav li.active a {
-            background: #34495e;
-            border-right: 4px solid #3498db;
-        }
+    .nav-button.active {
+        background: #3498db;
+        border-color: #2980b9;
+    }
 
-        .forum-nav li a i {
-            margin-left: 10px;
-            font-size: 18px;
-        }
-
-        .forum-nav li a span {
-            font-size: 16px;
-            font-weight: 500;
-        }
+    .nav-button i {
+        margin-left: 8px;
+        font-size: 16px;
+    }
