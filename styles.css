@@ -418,3 +418,163 @@ body {
     margin-top: 10px;
     font-size: 14px;
 }
+/* Certificate Page Specific Styles */
+.certificate-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.certificate-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #34495e;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background: #f8f9fa;
+        font-size: 16px;
+    }
+
+.generate-btn {
+    background: #1682ee;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+    .generate-btn:hover {
+        background: #34495e;
+    }
+
+.certificate-preview {
+    background: #fff9e6;
+    border: 2px solid #1682ee;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.certificate-header {
+    margin-bottom: 20px;
+}
+
+.certificate-title {
+    color: #1682ee;
+    font-size: 28px;
+    margin: 0;
+}
+
+.certificate-subtitle {
+    color: #34495e;
+    font-size: 18px;
+    margin: 5px 0 20px;
+}
+
+.certificate-body {
+    margin: 30px 0;
+}
+
+.certificate-student {
+    font-size: 24px;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+.certificate-course {
+    font-size: 20px;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+.certificate-details {
+    margin: 20px 0;
+    color: #555;
+}
+
+.certificate-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certificate-signature {
+    text-align: center;
+    width: 200px;
+}
+
+.signature-line {
+    border-top: 1px solid #1682ee;
+    width: 150px;
+    margin: 5px auto;
+}
+
+.print-btn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .certificate-preview, .certificate-preview * {
+        visibility: visible;
+    }
+
+    .certificate-preview {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border: none;
+    }
+
+    .print-btn {
+        display: none;
+    }
+}
