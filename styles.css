@@ -1,4 +1,4 @@
-﻿/* styles.css */
+/* styles.css */
 body {
     margin: 0;
     padding: 0;
@@ -88,32 +88,32 @@ button {
     padding: 0 15px;
 }
 
-.footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #1682ee;
-    padding-bottom: 5px;
-    display: inline-block;
-}
+    .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #1682ee;
+        padding-bottom: 5px;
+        display: inline-block;
+    }
 
-.footer-section p, .footer-section a {
-    color: #ddd;
-    line-height: 1.6;
-    text-decoration: none;
-}
+    .footer-section p, .footer-section a {
+        color: #ddd;
+        line-height: 1.6;
+        text-decoration: none;
+    }
 
-.footer-section a:hover {
-    color: #1682ee;
-}
+        .footer-section a:hover {
+            color: #1682ee;
+        }
 
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
 
-.footer-section ul li {
-    margin-bottom: 8px;
-}
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
 
 .social-links {
     display: flex;
@@ -121,14 +121,14 @@ button {
     font-size: 20px;
 }
 
-.social-links a {
-    color: white;
-    transition: color 0.3s;
-}
+    .social-links a {
+        color: white;
+        transition: color 0.3s;
+    }
 
-.social-links a:hover {
-    color: #1682ee;
-}
+        .social-links a:hover {
+            color: #1682ee;
+        }
 
 .copyright {
     text-align: center;
@@ -137,9 +137,53 @@ button {
     margin-top: 20px;
     font-size: 14px;
 }
-.site-footer {
-    direction: rtl;
+.forum-nav {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 10px;
+    padding: 20px 0;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.footer-section {
-    text-align: right;
-}
+
+    .forum-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .forum-nav li {
+        margin: 5px 0;
+        position: relative;
+    }
+
+        .forum-nav li a {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+            border-right: 4px solid transparent;
+        }
+
+            .forum-nav li a:hover {
+                background: #34495e;
+                border-right: 4px solid #3498db;
+            }
+
+        .forum-nav li.active a {
+            background: #34495e;
+            border-right: 4px solid #3498db;
+        }
+
+        .forum-nav li a i {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+        .forum-nav li a span {
+            font-size: 16px;
+            font-weight: 500;
+        }
