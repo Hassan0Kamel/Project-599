@@ -331,3 +331,90 @@ body {
         text-align: center;
     }
 }
+/* FAQ styles*/
+.faq-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.add-faq-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        min-height: 80px;
+        font-family: Arial, sans-serif;
+    }
+
+.submit-btn {
+    background: #1682ee;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+    .submit-btn:hover {
+        background: #34495e;
+    }
+
+.faq-list {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+    .faq-item:last-child {
+        border-bottom: none;
+    }
+
+.faq-question {
+    font-weight: bold;
+    color: #1682ee;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.faq-answer {
+    color: #34495e;
+    line-height: 1.6;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
